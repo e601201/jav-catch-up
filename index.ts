@@ -9,10 +9,6 @@ const result = await evaluate({
       instructions: 'Was a refund issued?',
     },
   },
-  // zeroDataRetention は Pro / Enterprise プラン限定のため Hobby では外す
-  // providerOptions: {
-  //   gateway: { zeroDataRetention: true },
-  // },
 });
 
 console.log(result.answers.refunded);
